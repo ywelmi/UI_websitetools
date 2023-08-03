@@ -1,0 +1,88 @@
+[
+    {
+        "target": "https://google.com/",
+        "date": "Mon, 12 Jun 2023 02:01:42 +0000",
+        "version": "Wapiti 3.1.6",
+        "scope": "folder",
+        "auth": null,
+        "crawled_pages_nbr": 1,
+        "detailed_report": false
+    },
+    {
+        "Backup file": [],
+        "Weak credentials": [],
+        "CRLF Injection": [],
+        "Content Security Policy Configuration": [
+            {
+                "method": "GET",
+                "path": "/",
+                "info": "CSP is not set",
+                "level": 1,
+                "parameter": "",
+                "referer": "",
+                "module": "csp",
+                "http_request": "GET / HTTP/1.1\nhost: www.google.com\nconnection: keep-alive\nuser-agent: Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0\naccept-language: en-US\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+                "curl_command": "curl \"https://google.com/\"",
+                "wstg": ["WSTG-CONF-12", "OSHP-Content-Security-Policy"]
+            }
+        ],
+        "Cross Site Request Forgery": [],
+        "Potentially dangerous file": [],
+        "Command execution": [],
+        "Path Traversal": [],
+        "Fingerprint web application framework": [],
+        "Fingerprint web server": [],
+        "Htaccess Bypass": [],
+        "HTTP Secure Headers": [
+            {
+                "method": "GET",
+                "path": "/",
+                "info": "X-Content-Type-Options is not set",
+                "level": 1,
+                "parameter": "",
+                "referer": "",
+                "module": "http_headers",
+                "http_request": "GET / HTTP/1.1\nhost: google.com\nconnection: keep-alive\nuser-agent: Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0\naccept-language: en-US\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\ncookie: 1P_JAR=2023-02-17-15; AEC=ARSKqsKMHBg_vtBjTvKk9lpb6x-BXoyRIlaiVoI2jqhiqJOQB8QJdoBh_v0; NID=511=gj5LFftje-eIcNOx4eUdUWrrjrju9UH8-70zUEDR_06i4pFeTVCJK867xq_WhIUKwhirrWOCGApuG4jlSjiNdGDvauNqn-5uS-P23oDTX4vv_6X6gtGT_MNvtxAQn0DkHUeqW94iOdbOOx9JvxhZ9Vyoe3RwNUrhGF7hgyUsId0",
+                "curl_command": "curl \"https://google.com/\"",
+                "wstg": ["OSHP-X-Content-Type-Options"]
+            },
+            {
+                "method": "GET",
+                "path": "/",
+                "info": "Strict-Transport-Security is not set",
+                "level": 1,
+                "parameter": "",
+                "referer": "",
+                "module": "http_headers",
+                "http_request": "GET / HTTP/1.1\nhost: google.com\nconnection: keep-alive\nuser-agent: Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0\naccept-language: en-US\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\ncookie: 1P_JAR=2023-02-17-15; AEC=ARSKqsKMHBg_vtBjTvKk9lpb6x-BXoyRIlaiVoI2jqhiqJOQB8QJdoBh_v0; NID=511=gj5LFftje-eIcNOx4eUdUWrrjrju9UH8-70zUEDR_06i4pFeTVCJK867xq_WhIUKwhirrWOCGApuG4jlSjiNdGDvauNqn-5uS-P23oDTX4vv_6X6gtGT_MNvtxAQn0DkHUeqW94iOdbOOx9JvxhZ9Vyoe3RwNUrhGF7hgyUsId0",
+                "curl_command": "curl \"https://google.com/\"",
+                "wstg": ["WSTG-CONF-07", "OSHP-HTTP-Strict-Transport-Security"]
+            }
+        ],
+        "HttpOnly Flag cookie": [
+            {
+                "method": "GET",
+                "path": "/",
+                "info": "HttpOnly flag is not set in the cookie : 1P_JAR",
+                "level": 1,
+                "parameter": "",
+                "referer": "",
+                "module": "cookieflags",
+                "http_request": "GET / HTTP/1.1\nhost: google.com\nconnection: keep-alive\nuser-agent: Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0\naccept-language: en-US\naccept-encoding: gzip, deflate, br\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+                "curl_command": "curl \"https://google.com/\"",
+                "wstg": ["WSTG-SESS-02"]
+            }
+        ],
+        "Log4Shell": [],
+        "Open Redirect": [],
+        "Reflected Cross Site Scripting": [],
+        "Secure Flag cookie": [],
+        "SQL Injection": [],
+        "TLS/SSL misconfigurations": [],
+        "Server Side Request Forgery": [],
+        "Stored Cross Site Scripting": [],
+        "Subdomain takeover": [],
+        "Blind SQL Injection": [],
+        "XML External Entity": []
+    }
+]
